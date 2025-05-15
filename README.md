@@ -1,6 +1,7 @@
 # llyy_llm_inference: 基于llama.cpp的轻量级大模型推理与交互平台
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ## 🌟 项目简介 (Introduction)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+## 🌟 项目简介 (Introduction)
 
 本项目 `llyy_llm_inference` 是一个基于强大的 `llama.cpp` 框架构建的C++大语言模型推理与交互服务平台。核心目标是解决在资源受限的边缘计算设备（如Raspberry Pi 4B和NVIDIA Jetson Nano）上高效部署和运行3B规模大语言模型的挑战。通过集成先进的模型量化技术、优化的计算图机制、灵活的后端调度以及高效的并发处理框架，本项目旨在提供一个轻量化、低依赖、高性能的本地LLM推理解决方案，并支持实时的流式交互体验。
 
@@ -38,11 +39,22 @@
 * **数据格式**: JSON (cJSON, nlohmann::json)
 * **目标硬件**: Raspberry Pi 4B, NVIDIA Jetson Nano
 
-## 🛠️ 项目结构 (Project Structure)
+## ⚙️ 安装与运行 (Installation & Usage)
+
+### 1. 环境依赖 (Prerequisites)
+
+* C++ 编译器 (例如: GCC/G++, Clang，需支持 C++11 或更高版本，推荐 C++17)
+* CMake (版本 3.13 或更高)
+* `llama.cpp` 的核心依赖 (通常随 `llama.cpp` 子模块或源码一同提供，如 BLAS 库可选)
+* **(可选) CUDA Toolkit**: 对于 NVIDIA Jetson Nano GPU 加速，需要安装 CUDA Toolkit (例如 10.x, 11.x，具体版本需与 Jetson Linux (L4T) 版本兼容)。
+* **(可选) 前端依赖**: Node.js 和 npm/yarn (如果包含并运行前端部分)。
+* **第三方库**:None
+
+### 2. 构建项目并运行 (Build & Run)
+
+![image](https://github.com/user-attachments/assets/d8908e8c-ee66-4f0f-b05c-a9cc4ba52c19)
+
+前端只需要在前端代码主界面输入npm run dev即可
+   
 
 
-
-
-前后端配置信息
-![image](https://github.com/user-attachments/assets/0b4582d5-d61c-4f3a-9f46-f36bcfac5729)
-![image](https://github.com/user-attachments/assets/24c0b527-2c76-4fb4-8ed8-c3562a5c68d5)
