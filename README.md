@@ -1,4 +1,4 @@
-# llyy_llm_inference: 基于llama.cpp的轻量级大模型推理与交互平台
+# llyy-EdgeLLM-Cpp-Inference: 基于llama.cpp的轻量级大模型推理与交互平台
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ## 🌟 项目简介 (Introduction)
